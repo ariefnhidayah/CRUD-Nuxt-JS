@@ -15,7 +15,7 @@
 
       <hr>
       <div class="d-flex justify-content-between">
-          <div>
+          <div v-if="$auth.loggedIn">
               <nuxt-link :to="'/articles/' + article._id + '/update'" class="btn btn-primary mr-3">Update</nuxt-link>
               <button class="btn btn-danger" @click="deleteRecord()">Delete</button>
           </div>
@@ -28,7 +28,7 @@
 
 <script>
 export default {
-    middleware: 'auth',
+    // middleware: 'auth',
 
     async asyncData(context) {
         const {data} = await context.$axios.get('/api/articles/' + context.route.params.id);
@@ -53,6 +53,12 @@ export default {
                     console.log(error);
                 })
             }
+        }
+    },
+
+    head() {
+        return {
+            title: this.article.title + ' - Nuxt Blog'
         }
     }
 }

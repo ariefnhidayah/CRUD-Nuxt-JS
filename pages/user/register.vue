@@ -82,6 +82,12 @@ export default {
                 }
             })
         }
+    },
+
+    head() {
+        return {
+            title: 'Register'
+        }
     }
 }
 </script>

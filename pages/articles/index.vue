@@ -2,7 +2,7 @@
   <div>
       <div class="d-flex justify-content-between align-items center">
           <h1>Articles</h1>
-          <nuxt-link class="btn btn-success" to="/articles/add">Add Article</nuxt-link>
+          <nuxt-link class="btn btn-success" to="/articles/add" v-if="$auth.loggedIn">Add Article</nuxt-link>
       </div>
       <hr>
 
@@ -32,6 +32,12 @@ export default {
         const {data} = await context.$axios.get('/api/articles');
         return {
             articles: data
+        }
+    },
+
+    head() {
+        return {
+            title: 'Articles - Nuxt Blog'
         }
     }
 }

@@ -68,6 +68,12 @@ export default {
                 }
             })
         }
+    },
+
+    head() {
+        return {
+            title: 'Login'
+        }
     }
 }
 </script>

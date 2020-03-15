@@ -14,6 +14,12 @@ export default {
     async asyncData (context) {
         await context.$auth.logout()
     },
+
+    head() {
+        return {
+            title: 'Logout'
+        }
+    }
 }
 </script>
 

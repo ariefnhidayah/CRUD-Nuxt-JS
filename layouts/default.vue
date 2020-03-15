@@ -50,6 +50,22 @@
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      title: 'Nuxt Blog'
+    }
+  },
+
+  head() {
+    return {
+      title: this.title
+    }
+  }
+}
+</script>
+
 <style>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
