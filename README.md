@@ -9,7 +9,8 @@ Copy this script for clone this project
 git clone https://github.com/ariefnhidayah/CRUD-Nuxt-JS.git
 ```
 
-And you can running this script for installation depedency in [NodeJS](https://nodejs.org/en/)
+## Installation
+Running this script for installation depedency in [NodeJS](https://nodejs.org/en/)
 ```
 npm install
 ```
