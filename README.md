@@ -1,22 +1,32 @@
-# crud_nuxt
+# CRUD NUXT
+This repository is a simple CRUD use [Nuxt JS](https://nuxtjs.org/) and [Express JS](https://expressjs.com/), and for save data use database [Mongo DB](https://www.mongodb.com/).
 
-> My super-excellent Nuxt.js project
+## Pre-Installation
+Before you clone this project, you must install [NodeJS](https://nodejs.org/en/) in your computer. And if you already installed [NodeJS](https://nodejs.org/en/). You can clone this project and you can running this repo in your computer.
 
-## Build Setup
-
+Copy this script for clone this project
 ``` bash
-# install dependencies
-$ npm install
+git clone https://github.com/ariefnhidayah/CRUD-Nuxt-JS.git
+```
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+And you can running this script for installation depedency in [NodeJS](https://nodejs.org/en/)
+```
+npm install
+```
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+Running this script for development
+```
+npm run dev
+```
 
-# generate static project
-$ npm run generate
+Running this script for build this project
+```
+npm run build
+```
+
+Running this script for generate static project
+```
+npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
