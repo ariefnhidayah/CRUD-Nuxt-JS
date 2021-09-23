@@ -14,7 +14,7 @@ Running this script for installation depedency in [NodeJS](https://nodejs.org/en
 ```
 npm install
 ```
-
+## Run Project
 Running this script for development
 ```
 npm run dev
